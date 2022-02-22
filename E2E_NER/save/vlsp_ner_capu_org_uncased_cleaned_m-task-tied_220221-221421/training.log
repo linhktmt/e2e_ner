@@ -1,0 +1,34 @@
+2022-02-21 22:15:27,560 ----------------------------------------------------------------------------------------------------
+2022-02-21 22:15:27,561 Model: "SequenceTagger(
+  (dropout): Dropout(p=0.8, inplace=False)
+  (dropout_capu): Dropout(p=0.8, inplace=False)
+  (word_dropout): WordDropout(p=0.05)
+  (locked_dropout): LockedDropout(p=0.5)
+  (locked_dropout_capu): LockedDropout(p=0.5)
+  (embedding2nn): Linear(in_features=768, out_features=768, bias=True)
+  (capu_embedding): Embedding(18, 768)
+  (capu_embed_learn): Linear(in_features=1536, out_features=768, bias=True)
+  (rnn): GRU(768, 512, num_layers=4, batch_first=True, dropout=0.5, bidirectional=True)
+  (linear): Linear(in_features=1024, out_features=12, bias=True)
+  (linear_capu): Linear(in_features=768, out_features=18, bias=True)
+)"
+2022-02-21 22:15:27,561 ----------------------------------------------------------------------------------------------------
+2022-02-21 22:15:27,561 Corpus: "Corpus: 89265 train + 6244 dev + 12648 test sentences"
+2022-02-21 22:15:27,561 ----------------------------------------------------------------------------------------------------
+2022-02-21 22:15:27,561 Parameters:
+2022-02-21 22:15:27,561  - learning_rate: "0.1"
+2022-02-21 22:15:27,561  - mini_batch_size: "64"
+2022-02-21 22:15:27,562  - patience: "6"
+2022-02-21 22:15:27,562  - anneal_factor: "0.25"
+2022-02-21 22:15:27,562  - max_epochs: "200"
+2022-02-21 22:15:27,562  - shuffle: "True"
+2022-02-21 22:15:27,562  - train_with_dev: "False"
+2022-02-21 22:15:27,562  - batch_growth_annealing: "False"
+2022-02-21 22:15:27,562 ----------------------------------------------------------------------------------------------------
+2022-02-21 22:15:27,562 Model training base path: "save/vlsp_ner_capu_org_uncased_cleaned_m-task-tied_220221-221421"
+2022-02-21 22:15:27,563 ----------------------------------------------------------------------------------------------------
+2022-02-21 22:15:27,563 Device: cuda:0
+2022-02-21 22:15:27,563 ----------------------------------------------------------------------------------------------------
+2022-02-21 22:15:27,563 Embeddings storage mode: cpu
+2022-02-21 22:15:27,564 ----------------------------------------------------------------------------------------------------
+2022-02-21 22:15:31,570 epoch 1 - iter 0/1395 - loss 80.72958374|12.64229202 - samples/sec: 2223.80
